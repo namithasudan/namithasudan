@@ -9,6 +9,23 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+
+<!-- Smaller thumbnails, this page only. style.css is untouched.
+     To resize: change the two numbers in minmax() below.
+     minmax(150px,180px) = smaller · minmax(240px,300px) = bigger -->
+<style>
+  .gallery{
+    grid-template-columns:repeat(auto-fill,minmax(190px,215px));
+    justify-content:start;
+    gap:18px;
+    margin-top:28px;
+  }
+  .shot{padding:6px}
+  .shot figcaption{padding:10px 3px 3px}
+  .shot .when{font-size:10px;padding-bottom:4px}
+  .shot h5{font-size:15.5px}
+  .shot p{font-size:13.5px;margin-top:4px}
+</style>
 </head>
 <body>
 
@@ -35,7 +52,7 @@
     <nav class="contents" aria-label="On this page">
       <a href="#conferences">Conferences <sup>3</sup></a>
       <a href="#teaching">Teaching <sup>1</sup></a>
-      <a href="#press">Press <sup>2</sup></a>
+      <a href="#press">Press <sup>1</sup></a>
       <a href="#campus">Campus <sup>1</sup></a>
     </nav>
   </div>
@@ -66,14 +83,19 @@
           <p>Attending the Energise 2023 International Conference.</p>
         </figcaption>
       </figure>
+
       <figure class="shot">
         <a href="NATPaved.jpg" target="_blank" rel="noopener">
-          <img src="NATPaved.jpg" alt="At National Facility for Accelerated Testing of Pavements and Vehicle Dynamics" loading="lazy">
+          <img src="NATPaved.jpg" alt="At the National Facility for Accelerated Testing of Pavements and Vehicle Dynamics" loading="lazy">
         </a>
         <figcaption>
-          <div class="when">2025 </div>
+          <div class="when">2025</div>
+          <!-- EDIT: shorten or reword this if you prefer -->
+          <h5>NATPeVD facility visit</h5>
+          <p>National Facility for Accelerated Testing of Pavements and Vehicle Dynamics.</p>
         </figcaption>
       </figure>
+
     </div>
   </section>
 
@@ -104,24 +126,12 @@
 
       <figure class="shot">
         <a href="equipment-times-1.jpg" target="_blank" rel="noopener">
-          <img src="equipment-times-1.jpg" alt="Article featured in Equipment Times, first page" loading="lazy">
+          <img src="equipment-times-1.jpg" alt="Article featured in Equipment Times, 2023" loading="lazy">
         </a>
         <figcaption>
-          <div class="when">Equipment Times</div>
+          <div class="when">Equipment Times · 2023</div>
           <h5>Feature article</h5>
-          <!-- EDIT: add the article title, issue month and a link if it is online -->
-          <p>2023.</p>
-        </figcaption>
-      </figure>
-
-      <figure class="shot">
-        <a href="equipment-times-2.jpg" target="_blank" rel="noopener">
-          <img src="equipment-times-2.jpg" alt="Article featured in Equipment Times, second page" loading="lazy">
-        </a>
-        <figcaption>
-          <div class="when">Equipment Times</div>
-          <h5>Feature article, continued</h5>
-          <p></p>
+          <!-- EDIT: add the article title and a link if it is online -->
         </figcaption>
       </figure>
 
@@ -135,7 +145,7 @@
 
       <figure class="shot">
         <a href="IITTPme.jpg" target="_blank" rel="noopener">
-          <img src="IITTPme.jpg" alt="The Indian Institute of Technology Tirupati logo on campus" loading="lazy">
+          <img src="IITTPme.jpg" alt="At the Indian Institute of Technology Tirupati campus" loading="lazy">
         </a>
         <figcaption>
           <div class="when">Yerpedu, Andhra Pradesh</div>
